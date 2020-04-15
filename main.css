@@ -1,0 +1,24 @@
+
+
+#speed_slider {
+    margin: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+#reveal_answer_div {
+    font-size: 24px;
+    height: 60px;
+    padding: 0px;
+    font-weight: bold;
+    color: green;
+    vertical-align: middle;
+}
+
+html {
+    font-size: 1rem;
+  }

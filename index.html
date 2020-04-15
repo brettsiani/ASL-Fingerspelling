@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASL Speed Test</title>
+    <meta http-equiv="pics-label" content='(pics-1.1 "http://www.icra.org/ratingsv02.html" comment "ICRAonline v2.0" l gen true for "http://www.lifeprint.com"  r (nz 1 vz 1 lz 1 oz 1 cz 1) "http://www.rsac.org/ratingsv01.html" l gen true for "http://www.lifeprint.com"  r (n 0 s 0 v 0 l 0))'> 
+    <meta type="description" content="Test Your Fingerspelling Skill">
+    <meta type="keywords" content="asl, american sign language, deaf, sign language, fingerspelling">
+    
+    <!-- $PATH -->
+    
+    <script src="words.js"></script>
+    <script src="main.js"></script>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <link href="jquery-ui.css" rel="stylesheet" type="text/css" >
+    <script src="jquery-1.4.2.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script src="jquery-mobile.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="jquery.ui.touch-punch.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+<br>
+<div class="container"> 
+<center>
+    
+            <h3 class=display-3>Welcome!</h3>
+            <p class="lead">ASL Fingerspelling Speed Test</p>
+            <p><small>JavaScript &bull; jQuery &bull; Bootstrap</small></p>
+            <p>Click below to begin</p>
+
+        <!-- Image Boarder -->
+    <img id="letter_image" width="240" height="240"><br><br>
+
+        <!-- New Word and Reveal Word Buttons -->
+    <button id="new_word_button" type="button" class="btn btn-primary btn-lg">New Word</button>
+    <button id="reveal_answer_button" type="button" class="btn btn-secondary btn-lg">Reveal Word</button>
+
+        <!-- Answer Box and Check Button -->
+    <div class="container" style="margin-top:1.5em"></div>
+    <div id="reveal_answer_div"></div>
+    <div id="answer_div">
+        <input class="form-group" id="answer_input" size="22" maxlength="25" tabindex="1" placeholder="Answer" aria-label="Answer" aria-describedby="button-addon2">&nbsp;
+        <button class="btn btn-success btn-md" type="button" id="check_answer_button">Check</button><br>
+    </div>
+    
+    <p class="lead">Score: <b id='scoretxt' >0</b></p>
+   
+
+        <!-- Options -->
+    <div>
+        <h4>Options</h4>   
+    </div> 
+
+    <div>
+        <div>Word Length</div>
+        <input type="radio" id="letter_limit_3" name="letter_limit" value="3">
+        <label for="letter_limit_3">3</label>
+        <input type="radio" id="letter_limit_4" name="letter_limit" value="4">
+        <label for="letter_limit_4">4</label>
+        <input type="radio" id="letter_limit_5" name="letter_limit" value="5">
+        <label for="letter_limit_5">5</label>
+        <input type="radio" id="letter_limit_any" name="letter_limit" value="99">
+        <label for="letter_limit_any">any</label>
+    </div>
+    
+        <!-- Speed Bar -->
+	<table width="280">
+		    <td align="center">  
+        <div>Adjust Speed</div>   
+        <div id="speed_slider"></div>
+        <div id="speed_value"></div>
+                </td>
+		            
+    </table>
+</center>
+<br>
+
+</div>
+</body>
+</html>
